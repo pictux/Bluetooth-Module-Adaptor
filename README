@@ -3,24 +3,27 @@ Bluetooth BC4 (HC05, HC06, HC0*) module adaptor to use with MCU (Arduino & co)
 For more info about bluetooth module use, download the guides attached here:
 http://arduino.cc/forum/index.php/topic,104903.30.html
 
+
 Eagle_Files folder:
 Schemas for building your own Bluetooth module adaptor pcb.
 PCB is one layer only, so it's easy to realize also with the toner transfer tecnique
 
 There are few variant:
 
-- v01
+- v01 (.sch only)
 complete module breakout;
 all module pins available on the header.
 
-- v02
+- v02 (.sch only)
 module adaptor with built-in voltage divider for RX & AT pin, plus STATUS and PAIRING leds; 
 5 pins available on the header: 3.3V, GND, AT, RX, TX.
 
-- v03
+- v03  (.sch only) & v05 (.sch + .brd)
 module adaptor with built-in resistors (no voltage divider) for RX & AT pin, plus STATUS and PAIRING leds;
 5 pins available on the header: 3.3V, GND, AT, RX, TX.
 
-
-- v05
-same as v03, but newer version with board included
+- v06 (.sch + .brd)
+module adaptor with built-in resistors (no voltage divider) for RX & AT pin, plus STATUS and PAIRING leds;
+added a jumper for the AT programming;
+added also a solder jumper for the pairing led pin: in HC05 the pin is PIO8, in HC06 the pin is PIO1;  
+4 pins available on the header: 3.3V, GND, RX, TX.
